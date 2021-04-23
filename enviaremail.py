@@ -7,17 +7,17 @@ outlook = win32.Dispatch("outlook.application")
 #criar email
 email = outlook.CreateItem(0)
 
-email.To = "antonio.lima@ibyte.com.br; ealves@ibyte.com.br"
+email.To = "email que queira enviar"
 email.Subject = "Email automático do Python"
 email.HTMLBody = """
 
-<p>Olá Igor, aqui é o código python!</p>
+<p-----</p>
 
-<p>Se liga nesse email automa tizado</p>
-<p>EAI MEU CHAPA<p>
+<p>-----</p>
+<p>------<p>
 
-<p>Atenciosamente,</p>
-<p>DEVigor</p>
+<p>--------</p>
+<p>---------</p>
 """
 
 email.Send()
